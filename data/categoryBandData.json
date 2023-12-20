@@ -8,7 +8,7 @@
         {
           "productId": 25,
           "productName": "청송 꿀사과",
-          "productImg": "/images/@mockup/food/apple1.png",
+          "productImg": "https://syon013.github.io/connection/images/@mockup/food/apple1.png",
           "originalPrice": 50000,
           "discountRate": 10,
           "discountAmount": 5000,
