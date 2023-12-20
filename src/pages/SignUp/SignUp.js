@@ -62,7 +62,7 @@ const SignUp = props => {
   };
 
   const postSignUp = () => {
-    fetch('/data/signup.json', {
+    fetch('https://syon013.github.io/connection/data/signup.json', {
       // fetch(`${API.USERS}/signup`, {
       method: 'POST',
       headers: {
@@ -95,7 +95,7 @@ const SignUp = props => {
 
   const postDuplicateCheck = () => {
     // 이메일 중복체크 API 실행
-    fetch('/data/duplicate.json', {
+    fetch('https://syon013.github.io/connection/data/duplicate.json', {
       // fetch(`${API.USERS}/duplicate`, {
       method: 'POST',
       headers: {
@@ -261,7 +261,8 @@ const SignUpContainer = styled.div`
 const SignUpLeftSection = styled.section`
   flex: 1;
   border-radius: 4px;
-  background: url(/images/account/bg_signup.jpg) no-repeat center/cover;
+  background: url(https://syon013.github.io/connection/images/account/bg_signup.jpg)
+    no-repeat center/cover;
   font-size: 0;
 `;
 

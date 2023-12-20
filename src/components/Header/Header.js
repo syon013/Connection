@@ -7,19 +7,22 @@ import PointButton from '../WalletButton/WalletButton';
 import GnbCartButton from '../CartButton/GnbCartButton';
 import styled, { css } from 'styled-components';
 
-const Header = ({ isKakao, points, cartCount }) => {
+const Header = ({ points, cartCount }) => {
   return (
     <HeaderWrap>
       <HeaderInnerWrap>
         <TopSection>
-          <Account isKakao={isKakao} />
+          <Account />
         </TopSection>
       </HeaderInnerWrap>
       <HeaderInnerWrap>
         <LeftSection>
           <Logo>
             <Link to="/main">
-              <img src="/images/logo.png" alt="커넥션 로고" />
+              <img
+                src="https://syon013.github.io/connection/images/logo.png"
+                alt="커넥션 로고"
+              />
               <span>커넥션</span>
             </Link>
           </Logo>

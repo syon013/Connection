@@ -47,7 +47,7 @@ const List = () => {
 
   const getListData = () => {
     fetch(
-      '/data/categoryListData.json',
+      'https://syon013.github.io/connection/data/categoryListData.json',
       // fetch(
       //   API_URL + `&sort=${sort}&offset=${calc_offset || 0}&limit=${limit || 10}`,
       {

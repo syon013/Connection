@@ -59,13 +59,16 @@ const Order = ({ points }) => {
 
   const getUserData = () => {
     // fetch(`${API.CART}/getuserinfo`, {
-    fetch(`/data/CartGetUserInfoData.json`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        authorization: localStorage.getItem('accessToken'),
+    fetch(
+      `https://syon013.github.io/connection/data/CartGetUserInfoData.json`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          authorization: localStorage.getItem('accessToken'),
+        },
       },
-    })
+    )
       .then(response => response.json())
       .then(result => {
         if (result.message === 'userInformation') {
@@ -105,7 +108,7 @@ const Order = ({ points }) => {
 
   // 통합 함수
   const getOrderData = () => {
-    fetch('/data/CartCompleteData.json', {
+    fetch('https://syon013.github.io/connection/data/CartCompleteData.json', {
       // fetch(`${API_URL}`, {
       method: 'GET',
       headers: {

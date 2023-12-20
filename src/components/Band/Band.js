@@ -153,14 +153,12 @@ const SwiperController = styled.div`
 
 const SwiperPrevBtn = styled.button`
   left: -48px;
-  background-image: url(/images/band/icon_prev.png);
-}
+  background-image: url(https://syon013.github.io/connection/images/band/icon_prev.png);
 `;
 
 const SwiperNextBtn = styled.button`
   right: -48px;
-  background-image: url(/images/band/icon_next.png);
-}
+  background-image: url(https://syon013.github.io/connection/images/band/icon_next.png);
 `;
 
 export default Band;

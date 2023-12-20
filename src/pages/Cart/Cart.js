@@ -30,7 +30,7 @@ const Cart = () => {
 
   // function
   const getMokData = () => {
-    fetch('/data/CartData.json')
+    fetch('https://syon013.github.io/connection/data/CartData.json')
       .then(Response => Response.json())
       .then(result => setCartData(result.data));
   };

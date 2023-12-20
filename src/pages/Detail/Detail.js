@@ -32,7 +32,7 @@ const Detail = () => {
   };
 
   function getDetailData() {
-    fetch('/data/detailData.json', {
+    fetch('https://syon013.github.io/connection/data/detailData.json', {
       // fetch(`${API.LIST}/${productId}`, {
       method: 'GET',
       headers: {

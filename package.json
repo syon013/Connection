@@ -1,6 +1,6 @@
 {
   "name": "connection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://syon013.github.io/connection",
   "private": true,
   "dependencies": {

@@ -20,7 +20,7 @@ const Main = () => {
   const globalCartQuantity = location.state;
 
   const getCategoryBandData = () => {
-    fetch('/data/categoryBandData.json', {
+    fetch('https://syon013.github.io/connection/data/categoryBandData.json', {
       // fetch(`${API.CATEGORY_BAND}`, {
       method: 'GET',
       headers: {
@@ -31,19 +31,19 @@ const Main = () => {
       .then(response => response.json())
       .then(result => {
         // real data
-        if (result.message === 'SUCCESS') {
-          setCategoryBandData(result.data);
-        }
+        // if (result.message === 'SUCCESS') {
+        //   setCategoryBandData(result.data);
+        // }
 
         // mock data
-        // setCategoryBandData(result);
+        setCategoryBandData(result);
 
         setLoading(false);
       });
   };
 
   const getSellerBandData = () => {
-    fetch('/data/sellerBandData.json', {
+    fetch('https://syon013.github.io/connection/data/sellerBandData.json', {
       // fetch(`${API.SELLER_BAND}`, {
       method: 'GET',
       headers: {
@@ -54,12 +54,12 @@ const Main = () => {
       .then(response => response.json())
       .then(result => {
         // real data
-        if (result.message === 'SUCCESS') {
-          setSellerBandData(result.data);
-        }
+        // if (result.message === 'SUCCESS') {
+        //   setSellerBandData(result.data);
+        // }
 
         // mock data
-        // setSellerBandData(result);
+        setSellerBandData(result);
 
         setLoading(false);
       });
@@ -81,9 +81,9 @@ const Main = () => {
             return <Band key={index} item={item} />;
           })}
 
-          {sellerBandData?.map((item, index) => {
+          {/* {sellerBandData?.map((item, index) => {
             return <Band key={index} item={item} />;
-          })}
+          })} */}
         </div>
       </main>
     </>
